@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HolyWatchface</string>
+    <string name="my_analog_name">My Analog</string>
+
+    <string name="text_holy">HOLY SHIT IT\'S</string>
+    <string name="text_fucking">FUCKING</string>
+    <string name="text_mother">MOTHERFUCKER</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="analog_background">#000000</color>
+    <color name="analog_hands">#cccccc</color>
+
+    <color name="color_watch_background">#000000</color>
+    <color name="color_time">#02daee</color>
+    <color name="color_text">#ffffff</color>
+    <color name="color_border">#2ef7e6</color>
+</resources>
