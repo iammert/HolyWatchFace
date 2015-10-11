@@ -1,5 +1,5 @@
 # HolyWatchFace
-Holy Shit Watchface 
+Holy Shit Watchface
 
 # Screenshot
 
