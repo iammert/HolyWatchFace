@@ -72,7 +72,7 @@ public class HolyWatchface extends CanvasWatchFaceService {
         };
 
         private final String[] numNames = {
-                "",
+                "TWELVE",
                 "ONE",
                 "TWO",
                 "THREE",
@@ -109,6 +109,7 @@ public class HolyWatchface extends CanvasWatchFaceService {
         Paint mSecondsPaint;
         Paint mBackgroundPaint;
         RectF rectFSeconds;
+        Rect textBounds;
         boolean mAmbient;
         Time mTime;
 
@@ -176,6 +177,8 @@ public class HolyWatchface extends CanvasWatchFaceService {
             mTextMediumPaint.setTypeface(typefaceMedium);
             mTextMediumPaint.setTextSize(28.0f);
 
+            textBounds = new Rect();
+
             mTime = new Time();
         }
 
@@ -229,7 +232,6 @@ public class HolyWatchface extends CanvasWatchFaceService {
                     canvas.drawArc(rectFSeconds, (i * 6) + 1 , 5 ,false, mSecondsPaint);
             }
 
-            Rect textBounds = new Rect();
             mTextMediumPaint.getTextBounds(textHolyShit, 0, textHolyShit.length(), textBounds);
             canvas.drawText(textHolyShit, centerX - (textBounds.width() / 2), (3 * bounds.height() / 13 + textBounds.height() / 2) * 0.9f, mTextMediumPaint);
 
