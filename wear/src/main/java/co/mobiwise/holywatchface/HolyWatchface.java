@@ -62,6 +62,8 @@ public class HolyWatchface extends CanvasWatchFaceService {
     private class Engine extends CanvasWatchFaceService.Engine {
 
 
+        private final String midNight = "TWELVE";
+
         private final String[] tensNames = {
                 "",
                 " TEN",
@@ -72,7 +74,7 @@ public class HolyWatchface extends CanvasWatchFaceService {
         };
 
         private final String[] numNames = {
-                "TWELVE",
+                "",
                 "ONE",
                 "TWO",
                 "THREE",
@@ -265,7 +267,10 @@ public class HolyWatchface extends CanvasWatchFaceService {
         }
 
         private String getHoursText(int hours){
-            return numNames[hours % 12];
+            int hour = hours % 12;
+            if(hour == 0)
+                return midNight;
+            return numNames[hour];
         }
 
         @Override
